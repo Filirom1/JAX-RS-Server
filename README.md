@@ -58,10 +58,12 @@ How to create a JAX-RS Server over SSL with BASIC Authentication
 For more details : 
 ------------------
 Read the javadoc of this project, or the source (only one file), or the tests (for usage exemples).
+
 Or refer to the Restlet doc : 
-  - JAX-RS extension <http://wiki.restlet.org/docs_2.0/13-restlet/28-restlet/57-restlet.html>
-  - SSL extension    <http://wiki.restlet.org/docs_2.0/13-restlet/28-restlet/153-restlet.html>
-  - Authentication   <http://wiki.restlet.org/docs_2.0/13-restlet/27-restlet/46-restlet/112-restlet.html>
+
+-   JAX-RS extension <http://wiki.restlet.org/docs_2.0/13-restlet/28-restlet/57-restlet.html>
+-   SSL extension    <http://wiki.restlet.org/docs_2.0/13-restlet/28-restlet/153-restlet.html>
+-   Authentication   <http://wiki.restlet.org/docs_2.0/13-restlet/27-restlet/46-restlet/112-restlet.html>
 
 
 Create your own certificate : 
