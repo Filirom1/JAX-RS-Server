@@ -46,7 +46,7 @@ public class JAXRSServerNGTest {
     public void testHttpServerWithBasicAuth() throws InterruptedException {
         //fixture
         JAXRSServer server = new JAXRSServer(MyResource.class, 8080);
-        server.enableBasicAuthentification("Realm", "login", "password");
+        server.enableBasicAuthentication("Realm", "login", "password");
 
         //execute
         try {
@@ -120,7 +120,7 @@ public class JAXRSServerNGTest {
     public void testHttpServerWithBasicAuthOverSSL() throws InterruptedException {
         //fixture
         JAXRSServer server = new JAXRSServer(MyResource.class, 8443);
-        server.enableBasicAuthentification("Realm", "login", "password");
+        server.enableBasicAuthentication("Realm", "login", "password");
         server.enableSSL("localhost", new File("./target/localhost.jks"), "password", "password");
 
         //execute

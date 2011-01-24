@@ -127,7 +127,7 @@ public class JAXRSServer {
      * @param login
      * @param password
      */
-    public void enableBasicAuthentification(String realm, String login, String password) {
+    public void enableBasicAuthentication(String realm, String login, String password) {
         basic = true;
         this.realm = realm;
         this.login = login;
