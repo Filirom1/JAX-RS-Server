@@ -43,6 +43,7 @@ How to create a JAX-RS Server over SSL with BASIC Authentication
 ----------------------------------------------------------------
 
     JAXRSServer server = new JAXRSServer(MyResource.class, 8443);
+    server.enableBasicAuthentification("Realm", "login", "password");
     server.enableSSL("www.hostname.fr", new File("path-to-your-keystore.jks"), "keyStorePassword", "keyPassword");
     try {
         server.start();
