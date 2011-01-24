@@ -58,6 +58,16 @@
             </plugin>
         </plugins>
     </build>
+    <distributionManagement>
+        <repository>
+            <id>repo</id>
+            <url>https://Filirom1@github.com/Filirom1/filirom1-mvn-repo.git/raw/master/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshot-repo</id>
+            <url>https://Filirom1@github.com/Filirom1/filirom1-mvn-repo.git/raw/master/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
     <dependencies>
         <dependency>
             <groupId>org.restlet.jse</groupId>

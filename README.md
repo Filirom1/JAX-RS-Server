@@ -56,6 +56,33 @@ How to create a JAX-RS Server over SSL with BASIC Authentication
     }
 
 
+How to use with maven
+---------------------
+Add in your pom : 
+
+    <dependencies>
+    ...
+        <dependency>
+            <groupId>org.filirom1</groupId>
+            <artifactId>JAX-RS-Server</artifactId>
+            <version>1.0.0</version>
+            <type>jar</type>
+        </dependency>
+    ...
+    </dependencies>
+    
+    <repositories>
+        <repository>
+            <id>filirom1-repo</id>
+            <url>https://Filirom1@github.com/Filirom1/filirom1-mvn-repo/raw/master/releases</url>
+        </repository>
+    </repositories>
+
+
+Otherwise for ant projects you can download the jar here : 
+<https://github.com/Filirom1/filirom1-mvn-repo/raw/master/releases/org/filirom1/JAX-RS-Server/1.0.0/JAX-RS-Server-1.0.0.jar>
+
+
 For more details : 
 ------------------
 Read the javadoc of this project, or the source (only one file), or the tests (for usage exemples).
