@@ -76,6 +76,10 @@ Add in your pom :
             <id>filirom1-repo</id>
             <url>https://Filirom1@github.com/Filirom1/filirom1-mvn-repo/raw/master/releases</url>
         </repository>
+        <repository>
+            <id>maven-restlet</id>
+            <url>http://maven.restlet.org</url>
+        </repository>
     </repositories>
 
 
