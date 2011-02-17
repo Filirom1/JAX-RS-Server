@@ -27,6 +27,8 @@ How to create a JAX-RS Server
 ------------------------------
 You just need to wite few lines of code :
 
+    import org.filirom1.jaxrs.JAXRSServer;
+
     JAXRSServer server = new JAXRSServer(MyResource.class, 8080);
     try {
         server.start();
@@ -41,6 +43,8 @@ You just need to wite few lines of code :
 
 How to create a JAX-RS Server over SSL with BASIC Authentication
 ----------------------------------------------------------------
+
+    import org.filirom1.jaxrs.JAXRSServer;
 
     JAXRSServer server = new JAXRSServer(MyResource.class, 8443);
     server.enableBasicAuthentication("Realm", "login", "password");
