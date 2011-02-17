@@ -13,7 +13,7 @@ A JAX-RS resource is something like this :
     import javax.ws.rs.Produces;
     
     @Path("/")
-    class MyRessource{
+    class MyResource{
     
         @GET
         @Produces("text/plain")
@@ -89,6 +89,36 @@ Add in your pom :
 
 Otherwise for ant projects you can download the jar here : 
 <https://github.com/Filirom1/filirom1-mvn-repo/raw/master/releases/org/filirom1/JAX-RS-Server/1.0.0/JAX-RS-Server-1.0.0.jar>
+
+How to use with Groovy Grape
+-------------------------------------------- 
+
+    import javax.ws.rs.GET;
+    import javax.ws.rs.Path;
+    import javax.ws.rs.Produces;
+    import org.filirom1.jaxrs.JAXRSServer;
+    
+    @GrabResolver(name='restlet', root='http://maven.restlet.org/')
+    @GrabResolver(name='filirom1', root='https://Filirom1@github.com/Filirom1/filirom1-mvn-repo/raw/master/releases')
+    @Grab(group='org.filirom1', module='JAX-RS-Server', version='1.0.0')
+    
+    @Path("/")
+    class MyRessource{ 
+    
+        @GET
+        @Produces("text/plain")
+        public String getPlain() {
+            return "This is an easy resource (as plain text)";
+        }
+    }
+    
+    
+    JAXRSServer server = new JAXRSServer(MyRessource.class, 8443);
+    server.enableBasicAuthentication("Realm", "login", "password");
+     
+    server.start();
+    Thread.sleep(1000000);
+    server.stop();
 
 
 For more details : 
