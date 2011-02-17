@@ -113,7 +113,7 @@ How to use with Groovy Grape
     }
     
     
-    JAXRSServer server = new JAXRSServer(MyRessource.class, 8443);
+    JAXRSServer server = new JAXRSServer(MyRessource.class, 8080);
     server.enableBasicAuthentication("Realm", "login", "password");
      
     server.start();
